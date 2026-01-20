@@ -1,13 +1,29 @@
 const Footer = () => {
   return (
-    <footer className="fixed bottom-0 left-0 w-full border-t border-gray-200 bg-white">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-2">
-        <p className="text-sm text-muted">
+    <footer className="border-t border-white/10 bg-slate-950">
+      <div
+        className="
+          max-w-7xl mx-auto
+          px-6 py-6
+          flex flex-col sm:flex-row
+          items-center justify-between
+          gap-4
+          text-sm text-gray-400
+        "
+      >
+        <p>
           © {new Date().getFullYear()} Prasad. All rights reserved.
         </p>
 
-        <p className="text-sm text-muted">
-          Built with React & Tailwind CSS.
+        <p className="flex items-center gap-1">
+          Built with
+          <span className="text-indigo-400 font-medium">
+            React
+          </span>
+          &
+          <span className="text-cyan-400 font-medium">
+            Tailwind CSS
+          </span>
         </p>
       </div>
     </footer>

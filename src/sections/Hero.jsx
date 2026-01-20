@@ -1,41 +1,45 @@
-const Hero = () => {
+import Resume from "../components/Resume";
+
+export default function Hero() {
   return (
-    <section
-      id="hero"
-      className="min-h-screen flex items-center px-6 sm:px-10 lg:px-20"
-    >
-      <div className="max-w-3xl">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-dark mb-4 leading-tight">
-          Hi, I’m Prasad
-        </h1>
+    <section className="min-h-screen flex items-center px-6 md:px-20">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-        <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-6">
-          Full Stack Developer
-        </h2>
+        {/* Left */}
+        <div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            Hi, I’m <span className="text-indigo-400">Prasad</span> 👋
+          </h1>
 
-        <p className="text-base sm:text-lg text-muted leading-relaxed mb-8">
-          I build clean, scalable, and user-focused web applications using
-          React, Node.js, and modern web technologies.
-        </p>
+          <p className="mt-6 text-gray-400 text-lg max-w-xl">
+            Full Stack Developer focused on building responsive,
+            scalable and user-friendly web applications using
+            React and Node.js.
+          </p>
 
-        <div className="flex flex-col sm:flex-row gap-4">
-          <a
-            href="/projects"
-            className="px-6 py-3 bg-primary text-black rounded-md font-medium border border-primary transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
-          >
-            View Projects
-          </a>
+          <div className="mt-8 flex gap-4 flex-wrap">
+            <a
+              href="/projects"
+              className="px-6 py-3 bg-indigo-500 rounded-lg hover:bg-indigo-600 transition"
+            >
+              View Projects
+            </a>
 
-          <a
-            href="/contact"
-            className="px-6 py-3 border border-primary text-primary rounded-md font-medium transition-all duration-200 hover:bg-primary hover:text-black hover:shadow-lg hover:-translate-y-0.5"
-          >
-            Contact Me
-          </a>
+            <a
+              href="/contact"
+              className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white/10 transition"
+            >
+              Contact Me
+            </a>
+            <Resume/>
+          </div>
+        </div>
+
+        {/* Right glow */}
+        <div className="flex justify-center">
+          <div className="w-72 h-72 rounded-full bg-gradient-to-tr from-indigo-500 to-cyan-400 blur-3xl opacity-30"></div>
         </div>
       </div>
     </section>
   );
-};
-
-export default Hero;
+}

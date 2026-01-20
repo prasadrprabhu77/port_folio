@@ -1,26 +1,27 @@
-const About = () => {
+export default function About() {
   return (
-    <section
-      id="about"
-      className="py-20 px-6 sm:px-10 lg:px-20"
-    >
-      <div className="max-w-3xl">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-dark mb-8">
+    <section className="py-24 px-6 md:px-20">
+      <div className="max-w-5xl mx-auto">
+
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 text-indigo-400">
           About Me
         </h2>
 
-        <p className="text-base sm:text-lg text-muted leading-relaxed mb-6">
-          I’m a Full Stack Developer focused on building scalable,
-          maintainable, and user-friendly web applications.
-        </p>
+        <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl p-8 leading-relaxed text-gray-300">
+          <p>
+            I’m a passionate Full Stack Developer with strong knowledge of
+            React, JavaScript, Node.js and Firebase. I enjoy building
+            real-world applications with clean UI, scalable logic and
+            optimized performance.
+          </p>
 
-        <p className="text-base sm:text-lg text-muted leading-relaxed">
-          I work primarily with React on the frontend and Node.js on the
-          backend, and I enjoy solving real-world problems with clean code.
-        </p>
+          <p className="mt-4">
+            I focus on writing maintainable code and continuously improving
+            my skills by building projects and solving real problems.
+          </p>
+        </div>
+
       </div>
     </section>
   );
-};
-
-export default About;
+}

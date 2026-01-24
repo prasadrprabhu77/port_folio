@@ -1,7 +1,7 @@
 const Resume = () => {
   return (
     <a
-      href="https://drive.google.com/file/d/1PgGOoFg5kcDTuQXXhzviz2yyWupRsXqE/view?usp=sharing"
+      href="https://drive.google.com/file/d/17R0nOT69MudoMlaV57TfqPdBByNO6rwG/view?usp=sharing"
       download
       target="_blank"
       rel="noopener noreferrer"

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Resume from "../components/Resume";
 
 export default function Hero() {
@@ -18,19 +19,19 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex gap-4 flex-wrap">
-            <a
-              href="/projects"
+            <Link
+              to="/projects"
               className="px-6 py-3 bg-indigo-500 rounded-lg hover:bg-indigo-600 transition"
             >
               View Projects
-            </a>
+            </Link>
 
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white/10 transition"
             >
               Contact Me
-            </a>
+            </Link>
             <Resume/>
           </div>
         </div>
